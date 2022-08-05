@@ -18,6 +18,17 @@ When opening a new issue, always make sure to fill out the issue template. This 
 - Provide reproduction steps: List all the steps necessary to reproduce the issue. The person reading your bug report should be able to follow these steps to reproduce your issue with minimal effort. If possible, use the REPL to create your reproduction.
 - For small design issues, IE changing a color of one color token, or slighly rearanging a component. Please include information on why the change is necessary and, design mockups to illustrate your point.
 
+### Linking Issues to Azure Devops
+
+Once an Issue is created and a Devops work item is created for it the work item can be linked to the Github Issue.
+
+From the work item simply
+- hit Add Related Work
+- Set the link type to Github Issue and add the url for the issue.
+
+You can update your issue description and link the workitem by adding AB#{ID} to the issue description For example, AB#125 will link to work item ID 125.
+
+[More Info](https://docs.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)
 ## Submitting RFCs
 
 RFCs are a place to discuss major changes to the Design System — where 'major' implies significant changes either to public interfaces or internal implementation details, particularly those that could be controversial or involve breaking changes.
